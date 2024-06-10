@@ -1,38 +1,107 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo_content {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 4rem 0;
+  align-items: flex-start;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header_main {
+  width: 100vw;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/896/217/285/blue-saturday-night-live-wallpaper-preview.jpg");
+  background-size: cover;                     
+  background-repeat:   no-repeat;
+  background-position: center center;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem 0 0 0;
+  font-size: 0.9rem;
+}
+.header_title {
+  margin: 0;
+  transform: translateY(40px);
+}
+.header_desc {
+  background: #fff;
+  color: #000;
+  width: 40vw;
+  padding: 1.4rem 0;
+  border-radius: 4px;
+  transform: translateY(40px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.taskform_main {
+  text-align: left;
+  background: #fff;
+  padding: 2rem;
+  width: 24vw;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #3963ff;
+  color: #fff;
+}
+.taskform_form {
+  display: flex;
+  flex-direction: column;
+}
+.taskform_form input {
+  margin-bottom: 1rem;
+  padding: 0.4rem;
+}
+.taskform_button {
+  border: none;
+  padding: 0.6rem;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.taskform_button:hover {
+  filter: brightness(0.8);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.taskcard_main {
+  background: #fff;
+  padding: 0.8rem 1rem;
+  width: 40vw;
+  text-align: left;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.taskcard_title {
+  margin: 8px 0;
+}
+.taskcard_desc {
+  margin: 8px 0;
+}
+.taskcard_deadline{
+  font-size: 0.8rem;
+  font-style: italic;
+}
+.taskcard_button {
+  background: none;
+  border: 3px solid #3963ff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.taskcard_button:hover {
+  background: #3963ff;
 }
